@@ -1,0 +1,114 @@
+
+<head>
+	<title>DKMPC</title>
+	<meta charset="utf-8">
+	<meta property="og:title" content="Title">
+	<meta property="og:description" content="Test">
+	<link rel="stylesheet" href="style.css?1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<script type="text/javascript">
+		function toggle(id) {
+			var e = document.getElementById(id);
+			if(e.style.display == 'block')
+				e.style.display = 'none';
+			else
+				e.style.display = 'block';
+		}
+	</script>
+</head>
+<div class="header" id="top">
+	<h1>
+		Multi-segment Soft Robot Control via <br> Deep Koopman-based Model Predictive Control
+	</h1>
+	<table class="authors">
+		<h4>
+			<span class="authors-affiliation">Lei Lv<sup>1,2</sup>, Lei Liu<sup>2,3</sup>, Lei Bao<sup>3,4</sup>, Fuchun Sun<sup>2</sup>, Jiahong Dong<sup>5</sup>, Jianwei Zhang<sup>6</sup></span>,Xuemei Shan<sup>4</sup></span>,Kai Sun<sup>2,3</sup></span>,Hao Huang<sup>7</sup></span>,Yu Luo<sup>2</sup></span>
+			<br>
+			<br>
+			<span class="authors-affiliation" style="font-size: 0.95em"><sup>1</sup>Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University, <br> <sup>2</sup>Department of Computer Science and Technology, Tsinghua  University, <br> <sup>3</sup>School of Biomedical Engineering, Tsinghua University,  <br> <sup>4</sup>Beijing Soft Robot Tech Co., Ltd, <br> <sup>5</sup>School of Clinical Medicine, Tsinghua University, <br> <sup>6</sup>Department of Informatics, University of Hamburg</span>,<br> <sup>7</sup>School of Mechanical Engineering and Automation, Beihang University</span>
+		</h4>
+	</table>
+</div>
+<div class="content">
+	<div>
+		<h2>Abstract</h2>
+		<p class="abstract">
+			Soft robots have the advantage of safe interaction and dexterous operation in environments, since the multiple segments with soft material can bring flexibility and compliance compared to general rigid robots. However, due to its high-dimensional, nonlinear, time-varying, and infinite-degree-of-freedom characteristics, there would be challenges in achieving precise and dynamic control, like trajectory tracking or position reaching. In this paper, we propose a Deep Koopman-based Model Predictive Control (DK-MPC) method for multi-segment soft robots. Specifically, we first employ a deep learning approach with sampling data to approximate the Koopman operator, which allows us to linearize the high-dimensional nonlinear dynamics of the soft robot into a finite-dimensional linear representation. Then, we utilize this linearized model within a model predictive control framework to compute optimal control inputs that minimize the tracking error between the desired and actual trajectories. Real-world experiments on the soft robot  “Chordata” demonstrate that DK-MPC can achieve can achieve high-precision control, which shows the potential of DK-MPC for future applications of soft robots.
+		</p>
+	</div>
+	<div class="hr"></div>
+	<div>
+		<h2>The proposed DK-MPC architecture</h2>
+		<div class="figure-caption">
+			<p>
+				DK-MPC architecture. 
+			</p>
+		</div>
+		<div class="figure-caption"></div>
+			<div class="figure" style="height: 410px; background-image: url(Figures/dkmpc2.png);"></div>
+		</div>
+		<h2>Framework for Learning Koopman Operators</h2>
+		<div class="figure-caption"></div>
+			<div class="figure" style="height: 410px; background-image: url(Figures/framework.png);"></div>
+		</div>
+		<h2>Design of soft robot "Chordata "</h2>
+		<div class="figure-caption"></div>
+			<div class="figure" style="height: 410px; background-image: url(Figures/design.png);"></div>
+		</div>
+
+		<h2>Experiments on soft robot "Chordata "</h2>
+		<h3>Path tracking</h3>
+		<div class="figure-caption"></div>
+			<div class="figure" style="height: 410px; background-image: url(Figures/THU3.png);"></div>
+		</div>
+		<h3>Moving Target tracking</h3>
+		<div class="figure-caption"></div>
+			<div class="figure" style="height: 410px; background-image: url(Figures/fig9.png);"></div>
+		</div>
+		<style>
+			.content-video {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 32px;
+			}
+		
+			.content-video-container {
+
+				max-width: 100%;
+				position: relative;
+			}
+		
+			.content-video-frame {
+				/* 使视频容器的宽度适应其内容 */
+				width: 100%;
+				max-width: 1200px;
+			}
+		
+			.content-video-frame video {
+				width: 100%;
+				height: auto;
+			}
+		</style>
+		<h2>Video</h2>
+		<div class="content-video" style="margin-bottom: 32px">
+			<div class="content-video-container">
+				<div class="content-video-frame medium">
+					<span></span>
+					<video playsinline="" autoplay="" loop="" preload="" muted="" width="400%">
+						<source src="Videos/video.mp4" type="video/mp4"/>
+					</video>
+				</div>
+			</div>
+		</div>
+</div>
+<footer>
+<a href="#top" class="bold">To top &UpArrow;</a>
+</footer>
