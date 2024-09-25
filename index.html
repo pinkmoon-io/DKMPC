@@ -41,7 +41,24 @@
 	<div>
 		<h2>Abstract</h2>
 		<p class="abstract">
-			Soft robots have the advantage of safe interaction and dexterous operation in environments, since the multiple segments with soft material can bring flexibility and compliance compared to general rigid robots. However, due to its high-dimensional, nonlinear, time-varying, and infinite-degree-of-freedom characteristics, there would be challenges in achieving precise and dynamic control, like trajectory tracking or position reaching. In this paper, we propose a Deep Koopman-based Model Predictive Control (DK-MPC) method for multi-segment soft robots. Specifically, we first employ a deep learning approach with sampling data to approximate the Koopman operator, which allows us to linearize the high-dimensional nonlinear dynamics of the soft robot into a finite-dimensional linear representation. Then, we utilize this linearized model within a model predictive control framework to compute optimal control inputs that minimize the tracking error between the desired and actual trajectories. Real-world experiments on the soft robot  “Chordata” demonstrate that DK-MPC can achieve can achieve high-precision control, which shows the potential of DK-MPC for future applications of soft robots.
+			Soft robots, compared to regular rigid robots, as their multiple segments with soft materials bring flexibility and compliance, have the advantages of safe interaction and
+dexterous operation in the environment. However, due to its
+characteristics of high dimensional, nonlinearity, time-varying
+nature, and infnite degree of freedom, it has been challenges
+in achieving precise and dynamic control such as trajectory
+tracking and position reaching. To address these challenges, we
+propose a framework of Deep Koopman-based Model Predictive
+Control (DK-MPC) for handling multi-segment soft robots.
+We frst employ a deep learning approach with sampling
+data to approximate the Koopman operator, which therefore
+linearizes the high-dimensional nonlinear dynamics of the soft
+robots into a fnite-dimensional linear representation. Secondly,
+this linearized model is utilized within a model predictive
+control framework to compute optimal control inputs that
+minimize the tracking error between the desired and actual
+state trajectories. The real-world experiments on the soft robot
+“Chordata” demonstrate that DK-MPC could achieve highprecision control, showing the potential of DK-MPC for future
+applications to soft robots.
 		</p>
 	</div>
 	<div class="hr"></div>
